@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1ptiBxHeNGCSeckK7-hV-xAAg95SpYtRl
 """
 
-pip install pyrebase4
-
 import streamlit as st
 import pandas as pd
 import numpy as np

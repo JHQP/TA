@@ -1,4 +1,7 @@
 pip3 install pyrebase
+pip3 install pandas
+pip3 install numpy
+pip3 install skicit-learn
 
 import streamlit as st
 import pandas as pd

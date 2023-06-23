@@ -1,3 +1,5 @@
+pip install "https://github.com/nhorvath/Pyrebase4/blob/master/pyrebase/pyrebase.py"
+
 import streamlit as st
 import pandas as pd
 import numpy as np

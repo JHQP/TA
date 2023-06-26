@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-"""import pyrebase
+import pyrebase
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
@@ -140,7 +140,7 @@ def elm_predict_test(uji, W, b, round_output=False):
     return y
 
 W, b, mape = elm_fit(X_train, y_train, 10)
-predict = elm_predict_test(uji, W, b, round_output=True)"""
+predict = elm_predict_test(uji, W, b, round_output=True)
 
 
 
@@ -175,10 +175,10 @@ col1, col2 = st.columns([.4,.6])
 
 col1.header("KELAYAKAN :")
 with col2:
-  #if predict[0] == 2:
+  if predict[0] == 2:
     st.write('<p class="big-font">Tidak Layak</p>', unsafe_allow_html=True)
 
-  #else:
+  else:
     st.write('<p class="big-font">Layak</p>', unsafe_allow_html=True)
 
 st.divider()

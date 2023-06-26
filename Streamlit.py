@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pyrebase
+"""import pyrebase
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
@@ -140,7 +140,7 @@ def elm_predict_test(uji, W, b, round_output=False):
     return y
 
 W, b, mape = elm_fit(X_train, y_train, 10)
-predict = elm_predict_test(uji, W, b, round_output=True)
+predict = elm_predict_test(uji, W, b, round_output=True)"""
 
 
 

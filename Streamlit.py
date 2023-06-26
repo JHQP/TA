@@ -178,7 +178,7 @@ with col2:
   #if predict[0] == 2:
     st.write('<p class="big-font">Tidak Layak</p>', unsafe_allow_html=True)
 
-  else:
+  #else:
     st.write('<p class="big-font">Layak</p>', unsafe_allow_html=True)
 
 st.divider()

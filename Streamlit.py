@@ -52,7 +52,7 @@ TDS = database.child("WATER QUALITY").child("PHYSICS PARAMETERS").child("TDS").g
 Turbidity = database.child("WATER QUALITY").child("PHYSICS PARAMETERS").child("TURBIDITY").get().val()
 Suhu = database.child("WATER QUALITY").child("PHYSICS PARAMETERS").child("SUHU").get().val()
 
-Uji = np.array([EColi,
+Uji = np.array([[EColi,
         Coliform,
         Arsen,
         TotalKromium,
@@ -65,7 +65,7 @@ Uji = np.array([EColi,
         Sulfat,
         Tembaga,
         TDS,
-        Turbidity])
+        Turbidity]])
 
 uji = Uji.astype(float)
 

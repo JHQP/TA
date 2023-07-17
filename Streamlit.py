@@ -175,11 +175,11 @@ col1, col2 = st.columns([.4,.6])
 
 col1.header("KELAYAKAN :")
 with col2:
-  if predict[0] == 2:
-    st.write('<p class="big-font">Tidak Layak</p>', unsafe_allow_html=True)
+  if predict[0] == 1:
+    st.write('<p class="big-font">Layak</p>', unsafe_allow_html=True)
 
   else:
-    st.write('<p class="big-font">Layak</p>', unsafe_allow_html=True)
+    st.write('<p class="big-font">Tidak Layak</p>', unsafe_allow_html=True)
 
 st.divider()
 

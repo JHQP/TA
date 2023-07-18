@@ -107,7 +107,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42, train
 
 def elm_fit(X, target, h, W=None):
     if W is None:
-        W = np.random.uniform(-.01, .01, (h, len(X[0])))
+        W = np.random.uniform(-.2, .2, (h, len(X[0])))
 
     print('Hinit')
     Hinit = X @ W.T
@@ -139,7 +139,7 @@ def elm_predict_test(uji, W, b, round_output=False):
 
     return y
 
-W, b, mape = elm_fit(X_train, y_train, 30)
+W, b, mape = elm_fit(X_train, y_train, 10)
 predict = elm_predict_test(Uji, W, b, round_output=True)
 
 adsa=predict[0]

@@ -170,10 +170,10 @@ st.write("""
 }
 </style>
 """, unsafe_allow_html=True)
-
+adsa=predict[0]
 col1, col2 = st.columns([.4,.6])
 
-col1.header("KELAYAKAN :",predict[0])
+col1.header("KELAYAKAN :",adsa)
 with col2:
   if predict[0] == 1:
     st.write('<p class="big-font">Layak</p>', unsafe_allow_html=True)

@@ -1,10 +1,10 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import pyrebase
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-
 
 config = {
     "apiKey": "AIzaSyBu3Lfwo_HdNGLtFFCCEXdDssgAVcG1ShA",
@@ -67,15 +67,8 @@ Uji = np.array([[EColi,
         TDS,
         Turbidity]])
 
-uji = Uji.astype(float)
 
-df = pd.DataFrame(Uji)
-df = df.T
-df = pd.DataFrame(df, columns = ['E.Coli', 'Coliform', 'Arsen', 'Total Kromium', 'Kadmium', 'Nitrit', 'Nitrat', 'Selenium', 'Aluminium', 'pH', 'Sulfat', 'Tembaga', 'TDS', 'Turbidity'], index=[''])
-
-
-
-data = pd.read_csv("https://raw.githubusercontent.com/JHQP/TA/main/Hasil%20Pengujian%20Kualitas%20Air%20PDAM%20-%20DataFrame.csv", index_col=0)
+data = pd.read_csv('https://raw.githubusercontent.com/JHQP/TA/main/(2)Hasil%20Pengujian%20Kualitas%20Air%20PDAM%20-%20DataFrame.csv', index_col=0)
 
 dfs = data.drop(['Kelayakan'], axis='columns')
 dfs['E.Coli']= dfs['E.Coli'].str.replace(',','.')
@@ -129,7 +122,7 @@ def elm_fit(X, target, h, W=None):
 
     return W, beta, mape
 
-def elm_predict_test(uji, W, b, round_output=False):
+def elm_predict_test(X, W, b, round_output=False):
     Hinit = X @ W.T
     H = 1 / (1 + np.exp(-Hinit))
     y = H @ b
@@ -142,7 +135,7 @@ def elm_predict_test(uji, W, b, round_output=False):
 W, b, mape = elm_fit(X_train, y_train, 10)
 predict = elm_predict_test(Uji, W, b, round_output=True)
 
-adsa=predict[0]
+
 
 #st.set_page_config(layout="wide")
 
@@ -151,7 +144,7 @@ import streamlit as st
 col1, col2, col3 = st.columns([1, 3, 1])
 
 with col1:
-  st.write(adsa)
+  st.write('')
 
 with col2:
   st.title('Kualitas Air Minum')

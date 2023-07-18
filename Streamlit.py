@@ -142,7 +142,7 @@ def elm_predict_test(uji, W, b, round_output=False):
 W, b, mape = elm_fit(X_train, y_train, 30)
 predict = elm_predict_test(Uji, W, b, round_output=True)
 
-
+adsa=predict[0]
 
 #st.set_page_config(layout="wide")
 
@@ -170,7 +170,7 @@ st.write("""
 }
 </style>
 """, unsafe_allow_html=True)
-adsa=predict[0]
+
 col1, col2 = st.columns([.4,.6])
 
 col1.header("KELAYAKAN :",adsa)

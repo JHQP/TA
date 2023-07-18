@@ -139,7 +139,7 @@ def elm_predict_test(uji, W, b, round_output=False):
 
     return y
 
-W, b, mape = elm_fit(X_train, y_train, 10)
+W, b, mape = elm_fit(X_train, y_train, 30)
 predict = elm_predict_test(uji, W, b, round_output=True)
 
 

@@ -141,7 +141,7 @@ predict = elm_predict_test(Uji, W, b, round_output=True)
 
 import streamlit as st
 
-col1, col2, col3 = st.columns([1, 3, 1])
+col1, col2 = st.columns([1, 4])
 
 with col1:
   st.image('https://raw.githubusercontent.com/JHQP/TA/38ab24b214531d9a4292a0b616ae281d1dd30da1/Logo.png', width=180)
@@ -149,12 +149,6 @@ with col1:
 with col2:
   st.title('Kualitas Air Minum')
 
-with col3:
-  st.write('')
-
-#st.sidebar.info('Test')
-
-#st.markdown('Test')
 
 st.write("""
 <style>

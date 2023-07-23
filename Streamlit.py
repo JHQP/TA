@@ -147,7 +147,7 @@ with col1:
   st.image('https://raw.githubusercontent.com/JHQP/TA/38ab24b214531d9a4292a0b616ae281d1dd30da1/Logo.png', width=180)
 
 with col2:
-  st.title('\nKualitas Air Minum')
+  st.title('\n\n\nKualitas Air Minum')
 
 with col3:
   st.write('')

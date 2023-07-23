@@ -144,7 +144,7 @@ import streamlit as st
 col1, col2, col3 = st.columns([1, 3, 1])
 
 with col1:
-  st.image('https://raw.githubusercontent.com/JHQP/TA/38ab24b214531d9a4292a0b616ae281d1dd30da1/Logo.png', width=100)
+  st.image('https://raw.githubusercontent.com/JHQP/TA/38ab24b214531d9a4292a0b616ae281d1dd30da1/Logo.png')
 
 with col2:
   st.title('Kualitas Air Minum')

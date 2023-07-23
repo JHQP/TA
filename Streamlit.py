@@ -140,7 +140,7 @@ predict = elm_predict_test(Uji, W, b, round_output=True)
 #st.set_page_config(layout="wide")
 
 import streamlit as st
-st.image('https://www.pexels.com/photo/landscape-nature-sky-man-6620743/')
+st.image('https://github.com/JHQP/TA/blob/38ab24b214531d9a4292a0b616ae281d1dd30da1/Logo.png')
 col1, col2, col3 = st.columns([1, 3, 1])
 
 with col1:

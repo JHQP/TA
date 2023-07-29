@@ -4,6 +4,6 @@ streamlit==1.14.0
 numpy==1.22.4
 pandas==1.5.3
 pycryptodome==3.18.0
-Pyrebase4==4.7.1
+Pyrebase4==4.6.0
 scikit-learn==1.2.2
 
